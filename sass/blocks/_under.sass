@@ -1,0 +1,32 @@
+.under-steps 
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #ffc000
+    &__block 
+        max-width: 915px
+        text-align: center
+        margin: auto
+    &__title 
+        +reg 
+        font-size: 32px
+        line-height: 50px
+        margin: 0
+@media (max-width: 1200px)
+    .under-steps 
+        &__title 
+            font-size: 18px
+            line-height: 1.4
+@media (max-width: 768px)
+    .under-steps 
+        max-height: 231px
+        padding-top: 72px
+        padding-bottom: 76px
+        &__block 
+            display: flex
+            justify-content: center
+            align-items: center
+        &__title 
+            max-width: 260px
+            font-size: 18px
+            line-height: 1.2

@@ -1,0 +1,77 @@
+.hero
+    padding: 50px 0
+    background-color: $secondary
+    &-block 
+        display: flex
+    &-text 
+        flex-basis: 55%
+        padding-right: 100px
+        &__title 
+            font-size: 41px
+            text-align: left
+            +bold
+            line-height: 55px
+            margin-bottom: 38px
+        &__subtitle 
+            display: inline-block
+            font-size: 20px
+            margin-bottom: 70px 
+            +bold 
+    &-list 
+        margin: 0
+        padding: 0
+        &__item 
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+            &:last-child 
+                margin-bottom: 0
+        &__image 
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 40px
+            height: 40px
+            border: 2px solid $main-color
+            border-radius: 50%
+            margin-right: 30px
+        &__text 
+            max-width: 240px
+            font-size: 14px
+            line-height: 24px
+    &-image 
+        &__img 
+            box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
+@media (max-width: 1200px)
+    .hero 
+        &-block 
+            flex-direction: column
+        &-list 
+            margin-bottom: 44px
+        &-text 
+            padding-right: 10px
+@media (max-width: 768px)
+    .hero 
+        padding-top: 40px
+        &-text 
+            &__title
+                font-size: 24px
+                line-height: 1.4
+                margin-bottom: 5px
+                margin-top: 5px
+            &__subtitle  
+                font-size: 16px
+                margin-bottom: 28px
+        &-list 
+            &__item 
+                margin-bottom: 20px
+            &__text 
+                font-size: 12px
+                max-width: 199px
+                line-height: 1.4
+            &__image 
+                margin-right: 15px
+        &-image 
+            max-width: 270px
+            max-height: 231px
+                
